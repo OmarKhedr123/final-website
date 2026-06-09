@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      window.onload = function () {
+        document.querySelector(".tablinks").click();
+      };
+    </script>
+  </head>
+  <body>
+    <nav><a href="https://calabriamarket.ca/">inspo</a></nav>
+
+    <header>
+      <img src="images/calabria-logo.webp" width="100%" />
+      <h1 id="titel">calabria market remade</h1>
+    </header>
+    <nav>
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'home')">Home</button>
+        <button class="tablinks" onclick="openCity(event, 'menu')">menu</button>
+        <button class="tablinks" onclick="openCity(event, 'contact')">
+          Contact
+        </button>
+      </div>
+    </nav>
+
+    <section id="home" class="tabcontent">
+      <h1>Home</h1>
+      <h2>
+        Your one-stop shop for specialty food items from Italy, fine wines
+        shipped from across the globe and fresh pizzas, pastas and sandwiches
+        from the heart of our kitchen.
+      </h2>
+
+      <div>
+        <h3>
+          MONDAY-SATURDAY 9:00AM-8:00PM IF ORDERING FOR DELIVERY WITHIN CITY
+          LIMITS All orders must be a minimum of $75 before tax Under 3KM = $5
+          3KM – 5KM = $10 5KM – 15KM = $20 ALL GIFT BASKETS = $20.00
+        </h3>
+      </div>
+    </section>
+
+    <section id="menu" class="tabcontent">
+      <h2>menu</h2>
+      <p>blblbl</p>
+    </section>
+
+    <section id="contact" class="tabcontent">
+      <h2>the text under this text is a lie</h2>
+      <p>blblblbl</p>
+    </section>
+  </body>
+</html>
