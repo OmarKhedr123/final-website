@@ -1,75 +1,181 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <script>
-      function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Anchor Kitchen & Bar</title>
+<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
 
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
+<nav>
+  <div class="nav-brand">
+    The Anchor
+    <span>Kitchen & Bar</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="menu.html">Menu</a></li>
+  </ul>
+</nav>
 
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
+<section class="title" style="color: #f0dc29; text-align: center;">
+    <p class="titel-tag">139 Scurfield Blvd., Winnipeg</p>
+    <h1>Good food,<br><em>great company</em></h1>
+    <p>Seasonal plates and handcrafted cocktails in a warm, welcoming space. Come as you are.</p>
+</section>
 
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-      }
+<section class="hours-strip">
+  <div class="hours-item">
+    <i class="ti ti-clock"></i>
+    <div>
+      <div class="label">Mon – Fri</div>
+      <div class="val">11am – 11pm</div>
+    </div>
+  </section>
 
-      window.onload = function () {
-        document.querySelector(".tablinks").click();
-      };
-    </script>
-  </head>
-  <body>
-    <nav><a href="https://calabriamarket.ca/">inspo</a></nav>
+  <section class="hours-item">
+    <i class="ti ti-clock"></i>
+    <div>
+      <div class="label">Sat – Sun</div>
+      <div class="val">10am – midnight</div>
+    </div>
+  </div>
+  <div class="hours-item">
+    <i class="ti ti-phone"></i>
+    <div>
+      <div class="label">Reservations</div>
+      <div class="val">(204) 555-0192</div>
+    </div>
+  </div>
+</section>
 
-    <header>
-      <img src="images/calabria-logo.webp" width="100%" />
-      <h1 id="titel">calabria market remade</h1>
-    </header>
-    <nav>
-      <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'home')">Home</button>
-        <button class="tablinks" onclick="openCity(event, 'menu')">menu</button>
-        <button class="tablinks" onclick="openCity(event, 'contact')">
-          Contact
-        </button>
+<section style="background: #fff;">
+  <div class="about-wrap">
+    <div class="img-block">
+      <div style="text-align:center;">
+        <i class="ti ti-building-store"></i>
+        <img src="images/gift-card.jpg" alt="Interior of the restaurant" />
       </div>
-    </nav>
-
-    <section id="home" class="tabcontent">
-      <h1>Home</h1>
-      <h2>
-        Your one-stop shop for specialty food items from Italy, fine wines
-        shipped from across the globe and fresh pizzas, pastas and sandwiches
-        from the heart of our kitchen.
-      </h2>
-
-      <div>
-        <h3>
-          MONDAY-SATURDAY 9:00AM-8:00PM IF ORDERING FOR DELIVERY WITHIN CITY
-          LIMITS All orders must be a minimum of $75 before tax Under 3KM = $5
-          3KM – 5KM = $10 5KM – 15KM = $20 ALL GIFT BASKETS = $20.00
-        </h3>
+    </div>
+    <div>
+      <p class="tag">Our story</p>
+      <h2 class="section-title">A neighbourhood spot worth coming back to</h2>
+      <p class="body-text">We started with a simple idea: honest food, made well, served in a place where people actually want to linger. Over a decade later, that hasn't changed.</p>
+      <div class="stats">
+        <div class="stat"><div class="stat-num">12+</div><div class="stat-label">Years open</div></div>
+        <div class="stat"><div class="stat-num">40+</div><div class="stat-label">Seasonal dishes</div></div>
+        <div class="stat"><div class="stat-num">80</div><div class="stat-label">Seats</div></div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section id="menu" class="tabcontent">
-      <h2>menu</h2>
-      <p>blblbl</p>
-    </section>
+<section class="menu-section">
+  <div class="menu-header">
+    <p class="tag">What we serve</p>
+    <h2 class="section-title">Something for every occasion</h2>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <i class="ti ti-salad"></i>
+      <div class="menu-card-name">Small plates</div>
+      <div class="menu-card-desc">Shareable starters and seasonal snacks to kick things off</div>
+    </div>
+    <div class="menu-card">
+      <i class="ti ti-meat"></i>
+      <div class="menu-card-name">Mains</div>
+      <div class="menu-card-desc">Hearty plates built around local ingredients and daily specials</div>
+    </div>
+    <div class="menu-card">
+      <i class="ti ti-glass-full"></i>
+      <div class="menu-card-name">Cocktails & drinks</div>
+      <div class="menu-card-desc">House cocktails, local drafts, wine, and non-alcoholic options</div>
+    </div>
+    <div class="menu-card">
+      <i class="ti ti-coffee"></i>
+      <div class="menu-card-name">Brunch</div>
+      <div class="menu-card-desc">Weekend mornings done right — eggs, pastries, and morning drinks</div>
+    </div>
+    <div class="menu-card">
+      <i class="ti ti-cake"></i>
+      <div class="menu-card-name">Desserts</div>
+      <div class="menu-card-desc">Rotating sweets made in-house, always worth saving room for</div>
+    </div>
+    <div class="menu-card">
+      <i class="ti ti-users"></i>
+      <div class="menu-card-name">Private events</div>
+      <div class="menu-card-desc">Book our space for groups, celebrations, and corporate dinners</div>
+    </div>
+  </div>
+</section>
 
-    <section id="contact" class="tabcontent">
-      <h2>the text under this text is a lie</h2>
-      <p>blblblbl</p>
-    </section>
-  </body>
+<section class="callout">
+  <div class="callout-inner">
+    <p class="tag">Stay in the loop</p>
+    <h2 class="section-title">Weekly specials & events</h2>
+    <p>From live music nights to chef's tasting menus, there's always something on. Follow us or sign up to hear about it first.</p>
+    <a href="#" class="btn btn-filled">See upcoming events</a>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="contact-inner">
+    <div>
+      <p class="tag">Find us</p>
+      <h2 class="section-title">Come visit</h2>
+      <div class="contact-list">
+        <div class="contact-row">
+          <div class="contact-icon"><i class="ti ti-map-pin"></i></div>
+          <div>
+            <div class="contact-lbl">Address</div>
+            <div class="contact-val">139 Scurfield Blvd., Winnipeg, MB R3Y 1L6</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon"><i class="ti ti-phone"></i></div>
+          <div>
+            <div class="contact-lbl">Phone</div>
+            <div class="contact-val">+12044871700</div>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon"><i class="ti ti-mail"></i></div>
+          <div>
+            <div class="contact-lbl">Email</div>
+            <div class="contact-val">calabriamarket.ca</div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-name">The Anchor Kitchen & Bar</div>
+      <div class="footer-sub">Good food and great company since 2012. Come hungry, leave happy.</div>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigate</div>
+      <ul class="footer-links">
+        <li><a href="menu.html">Menu</a></li>
+      
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Hours</div>
+      <ul class="footer-links">
+        <li><a href="#">Mon–Fri: 11am–11pm</a></li>
+        <li><a href="#">Sat–Sun: 10am–midnight</a></li>
+        <li><a href="#">Happy hour: 3–6pm daily</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 The Anchor Kitchen & Bar</span>
+    <span>Privacy · Terms</span>
+  </div>
+</footer>
+
+</body>
 </html>
